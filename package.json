@@ -1,0 +1,31 @@
+{
+  "name": "quickbee",
+  "version": "1.0.0",
+  "description": "QB Tech Solutions AI Chatbot (Node.js + Gemini)",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon server/index.js",
+    "start": "node server/index.js"
+  },
+  "keywords": [
+    "chatbot",
+    "gemini",
+    "google",
+    "express"
+  ],
+  "author": "QB Tech Solutions",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

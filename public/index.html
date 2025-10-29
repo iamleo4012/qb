@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="theme-color" content="#0e1a4a" />
+    <title>QB Tech Chatbot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <img src="/logo.jpg" alt="QB Tech Chatbot Logo" class="logo" />
+      <div class="title">
+        <h1>QB Tech Solutions</h1>
+        <p>Innovating Brands. Empowering Growth.</p>
+      </div>
+    </header>
+
+    <main class="chat-container">
+      <div id="messages" class="messages" aria-live="polite"></div>
+      <section id="faq" class="faq" aria-label="Quick questions" hidden>
+        <h2 class="faq-title">How can I assist you today?</h2>
+        <div class="faq-list">
+          <button data-q="Tell me about QB Tech Solutions">Tell me about QB Tech Solutions</button>
+          <button data-q="What services do you offer?">What services do you offer?</button>
+          <button data-q="How can I get started with a project?">How can I get started with a project?</button>
+          <button data-q="Show me your portfolio or past work">Show me your portfolio or past work</button>
+          <button data-q="How do I contact your team?">How do I contact your team?</button>
+        </div>
+      </section>
+      <form id="chat-form" class="composer" autocomplete="off">
+        <input id="prompt" class="prompt" name="message" placeholder="Type a message for Anjali…" />
+        <button class="send" type="submit" title="Send">Send</button>
+      </form>
+    </main>
+
+    <script src="/main.js" type="module"></script>
+  </body>
+  </html>
+
+
